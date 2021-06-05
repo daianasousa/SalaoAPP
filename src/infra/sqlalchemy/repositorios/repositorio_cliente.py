@@ -1,7 +1,7 @@
 from sqlalchemy import select, update
 from sqlalchemy.orm import Session, query
-from App.src.schemas import schemas
-from App.src.infra.sqlalchemy.models import models
+from src.schemas import schemas
+from src.infra.sqlalchemy.models import models
 
 class RepositorioCliente():
     

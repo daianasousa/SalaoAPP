@@ -1,9 +1,9 @@
 from fastapi import APIRouter, status, Depends, HTTPException
 from typing import List
 from sqlalchemy.orm import Session
-from App.src.schemas.schemas import Servico
-from App.src.infra.sqlalchemy.config.database import get_db
-from App.src.infra.sqlalchemy.repositorios.repositorio_servico \
+from src.schemas.schemas import Servico
+from src.infra.sqlalchemy.config.database import get_db
+from src.infra.sqlalchemy.repositorios.repositorio_servico \
     import RepositorioServico
 
 router = APIRouter()

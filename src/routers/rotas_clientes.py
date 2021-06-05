@@ -1,9 +1,9 @@
 from fastapi import APIRouter, status, Depends, HTTPException
 from typing import List
 from sqlalchemy.orm import Session
-from App.src.schemas.schemas import Cliente, ClienteSimples
-from App.src.infra.sqlalchemy.config.database import get_db, criar_bd
-from App.src.infra.sqlalchemy.repositorios.repositorio_cliente \
+from src.schemas.schemas import Cliente, ClienteSimples
+from src.infra.sqlalchemy.config.database import get_db, criar_bd
+from src.infra.sqlalchemy.repositorios.repositorio_cliente \
     import RepositorioCliente
 
 #criar_bd()
