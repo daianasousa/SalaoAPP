@@ -5,8 +5,7 @@ from src.routers import rotas_clientes, rotas_servicos
 app = FastAPI()
 
 # CORS
-origins = ['http://localhost:3000', 
-            'http://myapp.vercel.com']
+origins = ['http://localhost:5500']
 
 app.add_middleware(CORSMiddleware, 
                     allow_origins=origins,

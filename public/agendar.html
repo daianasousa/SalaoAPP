@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="agendar.js" defer></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Página Inicial - Agendamento</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="http://localhost:5500/public/agendar.html" target="_blank" rel="nofollow">Agendar</a></li>
+            <li><a href="http://localhost:5500/public/lista_agendamentos.html" target="_blank" rel="nofollow">Agendamentos</a></li>
+            <li><a href="#">Serviços</a>
+                <ul>
+                    <li><a href="http://localhost:5500/public/servicos.html" target="_blank" rel="nofollow">Cadastrar Serviços</a></li>
+                    <li><a href="http://localhost:5500/public/listaservicos.html" target="_blank" rel="nofollow">Ver Serviços disponíveis</a></li>
+                </ul>
+            </li>
+        </ul> 
+    </div>
+
+    <h2 id="titulo-cadastrar">Agendamento</h2>
+    <form id="form-cadastrar">      
+        <div><label for="nome" class="requerido">Nome:</label></div>
+        <br>
+        <div><input type="name" required="requerido" placeholder="Digite seu nome" class="caixa" id="nome"></div> 
+        <br>   
+        <div><label for="telefone" class="requerido">Telefone:</label></div>  
+        <br>  
+        <div><input type="text" required="requerido" placeholder="ex: 86 9999-9999" class="caixa" id="telefone"></div> 
+        <br>   
+        <div><label for="dia_mes" class="requerido">Data do Agendamento</label></div>
+        <br>    
+        <div><input type="text" required="requerido" placeholder="digite o dia desejado" class="caixa" id="dia_mes"></div>    
+        <br>
+        <div><label for="hora" class="requerido">Horário:</label></div>
+        <br>    
+        <div><input type="text" required="requerido" placeholder="Horário" class="caixa" id="hora"></div>    
+        <br>
+        <div><label for="deseja_fazer" class="requerido">Tipo de serviço</label></div>   
+        <br>
+        <div><input type="text" required="requerido" placeholder="Serviços desejado" class="caixa" id="deseja_fazer"></div>
+        <br>
+        <input type="submit" value="Agendar" id="bota-agendar">    
+        <a href="http://localhost:5500/public/listaservicos.html"><input type="submit" value="Voltar" id="bota-voltar"></a>        
+    </form>
+    <footer>
+        <div class="rodape">
+            © 2021 - Salão App. Todos os Direitos Reservados<br>
+            <a href="https://github.com\daianasousa">Github - Daiana Sousa</a>
+        </div>
+    </footer>
+</body>
+</html>

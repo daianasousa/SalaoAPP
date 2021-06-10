@@ -1,0 +1,578 @@
+/*Menu das paginas*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 900px;
+    height: 400px;
+    background-image: url(https://images.madeiramadeira.com.br/product/images/74275556-papel-de-parede-classico-marrocos-em-tons-de-cinza-e-gold-para-quartos-e-salammretr703m-7052-1_zoom-1000x1000.jpg?);
+}
+
+.menu{
+    height: 48px;
+    width: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 180px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: #ecd452;
+}
+
+.menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+/*--------------------------------------------------------------*/
+
+
+/*CSS parte do arquivo CADASTRAR*/
+#titulo-cadastrar{
+    margin: 0 auto;
+    width: 970px;
+    margin-top: 17px;
+    font-size: 18pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+#form-cadastrar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 970px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+.caixa {
+    border: 1px solid rgba(2, 2, 2, 0.329); 
+    font-weight: bold;
+    height: 25px;
+    border-radius: 5px;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+.caixa:focus, #mensagem:focus{
+    background: rgba(206, 203, 203, 0.5);
+}
+
+
+/*CSS parte do arquivo CADASTRAR*/
+.requerido::after{
+    content:" *";
+    color: red;
+    display: inline;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+#preco, #quantidade, #codigo{
+    width: 46%;
+}
+
+#bota-agendar{
+    background: #006400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+#bota-agendar:hover{
+    background: #228b22;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+#bota-voltar{
+    background: #ff0000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 2em;
+    border-radius: 5px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+#bota-voltar:hover{
+    background: #ff4040;
+}
+
+/*CSS parte do arquivo CADASTRAR*/
+a:link{
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#titulo-listar{
+    margin: 15px 14em -6px; 
+    font-size: 18pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#estoque{
+    color: rgba(255, 255, 255, 0.637);
+    padding-left: 1.2%;
+    font-weight: normal;
+    padding-right: 1.5%;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+table tr th{
+    background: #003c64; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px 5px;
+    color: white;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#tdProdutos{
+    border-spacing: 0;
+    border: 0;
+    width: 75%;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#btnEditar{
+    cursor: pointer;
+    padding-top: 5px;
+    margin: 0 5px 0 15px; 
+    color: #ffd890;  
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#btnEditar:hover{
+    color: #ffa500;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#btnRemover{
+    cursor: pointer;
+    padding-top: 3px;
+    margin: 0 -25px 0 5px;
+    color: #fd9b9b;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#btnRemover:hover{
+    color: red;
+}
+
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_cadastrados td{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_cadastrados td{
+    background-color: rgba(189, 189, 189, 0.164);
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_cadastrados tr:hover td{
+    background-color: #f3f594ad;
+    
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_cadastrados tr.selecionado td{
+    background-color: #aff7ff;
+}
+
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#botao-adicionar{
+    background: #003c64;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 61.5%;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    width: 9%;
+    cursor: pointer;
+    display: flex;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#botao:hover{
+    background: #025994;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#icone{
+    background: transparent;
+    border: none;
+    margin-left: 20px;
+    position: relative;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+/*CSS parte do arquivo VENDAS*/
+#titulo-vendas{
+    margin: 0 auto;
+    width: 970px;
+    margin-top: 8px;
+    font-size: 18pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CSS parte do arquivo VENDAS*/
+#vendas{
+    color: rgba(255, 255, 255, 0.637);
+    padding-left: 1.2%;
+    font-weight: normal; 
+    height: 100px;
+    border-left: white;
+    border-left: 2px solid;
+    padding-left: 1.5%;  
+}
+
+
+
+/*CSS parte do arquivo VENDAS*/
+.vendas{
+    border: 1px solid rgba(2, 2, 2, 0.329); 
+    font-weight: bold;
+    height: 24px;
+    border-radius: 5px;
+}
+
+
+/*CSS parte do arquivo VENDAS*/
+#botao-vendas{
+    background: #006400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CSS parte do arquivo VENDAS*/
+#botao-vendas:hover{
+    background: #228b22;
+}
+
+/*CSS parte do arquivo VENDAS*/
+#form-vendas{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 970px;
+}
+
+/*CSS parte do arquivo VENDAS*/
+#tdVendas{
+    border-spacing: 0;
+    border: 0;
+    width: 75%;
+}
+
+#titulo-vendas{
+    margin: 5px 14em 20px; 
+    font-size: 18pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_vendidos td{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_vendidos td{
+    background-color: rgba(189, 189, 189, 0.164);
+}
+
+/*CSS parte do arquivo LISTA DE PRODUTOS*/
+#produtos_vendidos tr:hover td{
+    background-color: #f3f594ad;
+    
+}
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+.content{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px;
+    box-shadow: rgb(134, 133, 133);   
+}
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+.modal{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+/*CSS parte do arquivo EDITAR PRODUTOS
+JANELA MODAL DA PARTE DE EDITAR*/
+.modal-content{
+    margin: 15px auto;
+    max-width: 480px;
+    background-color: white;
+    padding: 10px 10px 0 10px;
+    box-shadow: 0 0 5px rgba(37, 29, 29, 0.815);
+    border-radius: 8px 8px 8px 7px;
+}
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+#form-editar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 45px auto;
+    width: 970px;
+    padding-bottom: 10px;
+}
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+#menu-editar{
+    background: #003c64; 
+    margin-top: -10px;
+    height: 35px;
+    width: 36.6vw;
+    margin-left: -10px;
+    font-size: 12pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    position: fixed;
+    font-weight: bold;
+    border-radius: 8px 8px 8px 7px; 
+    padding-bottom: 10px;
+}
+
+#titulo-editar{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+.btnFechar{
+    background: #ff0000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+.btnFechar:hover{
+    background: #ff4040;
+}
+
+
+/*CSS parte do arquivo EDITAR PRODUTOS*/
+#botao-atualizar{
+    background: #006400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    padding: 0.3em 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+/*CSS parte do arquivo VENDAS*/
+#botao-atualizar:hover{
+    background: #228b22;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+.content_confimacao{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px;
+    box-shadow: rgb(134, 133, 133);   
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+.modal_confirmacao{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS
+JANELA MODAL DA PARTE DE DELETAR*/
+.modal-content-confirmacao{
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 350px;
+    height: 131px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(19, 19, 19, 0.815);
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+#texto-confirmacao{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13pt;
+    text-align: center;
+    padding-bottom: 2px;
+    margin-top: 25px;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+#botao-sim{
+    background-color: #2ec72ee7;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    margin-top: 44px;
+    margin-right: -4px;
+    margin-left: -10px;
+    width: 188px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 0 0 0 5px;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+#botao-nao{
+    background-color: #f35134;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    margin-right: -11px;
+    margin-left: -6px;
+    width: 188px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 0 0 5px 0;
+}
+
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+#botao-sim:hover{
+    background-color: #5edd5e;
+}
+
+/*CSS parte do arquivo DELETAR PRODUTOS*/
+#botao-nao:hover{
+    background-color: #f5655e;
+}
+
+/*Rodapé*/
+.footer{
+    padding-top: 500px;
+}
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+    text-align: center;
+    background-color: #003c64;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: -100px;
+}
+
+.rodape a{
+    color: white;
+}
